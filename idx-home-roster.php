@@ -132,6 +132,14 @@ class IDXHomeRoster{
 
         $query = "DROP TABLE " . $this->tablename;
         $wpdb->query($query);
+
+        if(get_option('idx_account_url_no_protocol')){
+            delete_option('idx_account_url_no_protocol');
+        }
+
+        if(get_option('idx_account_url_no_protocol')){
+            delete_option('idx_account_url_no_protocol');
+        }
     }
 
 }
