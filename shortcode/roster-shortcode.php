@@ -39,9 +39,11 @@ class IDXHOMERosterShortCode {
                                 <div class="agentContainer" style="min-width:300px;">
                                         <div class="agentContainer-Inner">
                                             <a href="<?php echo get_option('idx_account_url_no_protocol') . $agent->agentBioURL ?>" class="roster-popup">
-                                                <?php if ($agent->agentPhotoURL != null || $agent->agentPhotoURL != '') {?>
+                                            <?php if ($agent->agentPhotoURL != null || $agent->agentPhotoURL != '') {?>
                                                 <img src="<?php echo $agent->agentPhotoURL?>" alt="<?php echo $agent->agentDisplayName?> Headshot" class="wp-post-image"></a>
-                                                <?php } ?>
+                                                <?php } else {?>
+                                                    <img src="//d1qfrurkpai25r.cloudfront.net/images/missingAgent.png?auid=YQGhGHFtrTuKU3e2XIx1TgAAAAk" alt="<?php echo $agent->agentDisplayName?> Place Holder" class="wp-post-image"></a>
+                                                <?php }?>
                                             <div class="agentHover">
                                                 <a class="agentName roster-popup" href="<?php echo get_option('idx_account_url_no_protocol') . $agent->agentBioURL ?>">
                                                 <?php echo $agent->agentDisplayName ?>
