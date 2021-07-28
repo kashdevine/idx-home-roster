@@ -1,7 +1,7 @@
 <?php
 
 /*
-  Plugin Name: Roster Layout
+  Plugin Name: IDX Home Custom Roster Layout
   Version: 1.0
   Description: Provides a dynamic roster layout similar to IDX Broker Home's PPI Reality's roster layout.
   Author: IDX Broker
