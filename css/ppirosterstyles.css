@@ -1,0 +1,165 @@
+/*Custom Roster*/
+
+.agentContainer-Inner {height: 100%;}
+
+.allAgentsContainer {
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agentContainer {
+    width: 25%;
+    padding: 8px 7.5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.agentContainer-Inner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.agentContainer canvas {
+    display: block;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.agentContainer-Inner:hover canvas {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.agentContainer img {
+    display: block;
+    width: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 0;
+    max-height: 323.75px;
+}
+.agentContainer-Inner:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.agentHover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -90px;
+    -webkit-transition: bottom .3s ease;
+    -o-transition: bottom .3s ease;
+    transition: bottom .3s ease;
+}
+.agentContainer-Inner:hover .agentHover {
+    bottom: 0;
+}
+.agentDetails {
+    background: #0094D2;;
+    color: #070707;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 11.64%;
+}
+.agentInfo {
+    position: relative;
+    padding-left: 30px;
+    font-size: 18px;
+    letter-spacing: .15em;
+    line-height: 1;
+    color: #070707;
+}
+.agentContainer i, .agentContainer a {
+    font-style: normal;
+     color:white !important;
+}
+.agentDetailsLeft i {
+    position: absolute;
+}
+.agentContainer i.fa-phone {
+    font-size: 16px;
+    left: 7px;
+}
+.agentContainer i.fa-envelope {
+	font-size:35px;
+}
+a.agentName {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: .1em;
+    color: #fff;
+    text-align: center;
+    background: rgba(86, 86, 86, .7);
+    text-transform: uppercase;
+    padding: 20px 0 30px;
+    /*padding: 34px 0 15px;*/
+    display: block;
+}
+a.agentName:hover {
+	color: white !important;
+}
+.agentDetailsRight .agentInfo {
+    font-size: 20px;
+    padding: 0px;
+}
+.agentContainer-Inner:hover a.agentName {
+    padding-bottom: 33px;
+}
+
+.agentContainer-Inner:hover span.agentRole {
+    opacity: 1;
+}
+span.agentRole {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: all 0.1s ease-in-out;
+}
+
+@media only screen and (max-width:1450px) {
+.agentDetails {
+        padding: 10px 5%;
+    }
+}
+
+@media only screen and (max-width:1199px) { 
+    a.agentName {
+        font-size: 18px
+    }
+    .agentDetailsRight .agentInfo {
+        padding-left: 15px
+    }
+    .agentInfo {
+        font-size: 13px
+    }
+    .agentContainer i.fa-phone {
+        top: 1
+    }
+}
+
+@media only screen and (max-width:991px) {
+.agentContainer {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .agentContainer {
+        width: 100%
+    }
+}
+/*End Custom Roster*/
